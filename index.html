@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bodymovin Practice</title>
+    <link rel='stylesheet' href='css/main.css'>
 </head>
 <body>
+
+
+    <nav>
+
+        <ui>
+
+            <li>
+
+
+                <!-- id = 'search' is where the actual icon will be placed into. -->
+                <i id='search'></i>Search
+
+
+            </li>
+
+
+        </ui>
+
+    </nav>
+
+
+    <script src='lottie.js'></script>
+
+
+    <script>
+
+
+        var animation = bodymovin.loadAnimation({
+
+            container: document.getElementById('search'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true, 
+            path: 'data.json', 
+
+
+        })
+
+
+        btn = document.GetElementById('search');
+
+        btn.addEventListener('click', function(){
+
+            animation.play(); 
+
+        })
+
+    </script>
     
 </body>
 </html>
